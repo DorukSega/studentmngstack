@@ -1,6 +1,8 @@
 # Student Management Stack
 Very basic [Three Tier Architecture](https://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture) - FRONTEND & API & DMBS SERVER - implemented for a school project.
 
+![Example image showcasing the frontend interface](https://i.imgur.com/a8KAx0L.png)
+
 Consists of SQL statements written for MSQL, API server written on GO that serves the information on a MSQL server and a simple website that serves as a admin panel.
 
 Written and implemented very quickly so some parts of the code quite hacky and messy.
