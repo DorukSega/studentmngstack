@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="topbar">
+            <div class="t_item selected" ttab="tables">View All</div>
+            <div class="t_item" ttab="addnew">Add New</div>
+            <div class="t_item" ttab="remove">Remove Items</div>
+            <div class="t_item" ttab="cofs">Courses of Student</div>
+
+        </div>
+        <div id="tabs">
+            <div class="tab selected" id="tables">
+                <div id="snsc">
+                    <select id="data-select">
+                        <option value="">Choose an option</option>
+                        <option value="student">Students</option>
+                        <option value="teacher">Teachers</option>
+                        <option value="department">Departments</option>
+                        <option value="course">Courses</option>
+                        <option value="class">Classes</option>
+                        <option value="passingstudents">Passing Students</option>
+                    </select>
+                    <input type="text" id="search" placeholder="Search.." />
+                    <input type="button" id="update" value="Upload Changes to Database" disabled="true" />
+                </div>
+                <table id="data-view">
+                    <thead>
+                        <tr id="d_head"></tr>
+                    </thead>
+                    <tbody id="d_body"></tbody>
+                </table>
+            </div>
+
+            <div class="tab" id="addnew">
+                <select id="add-select">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="department">Department</option>
+                </select>
+                <div class="add-sect selected" aaof="student">
+                    <div class="addcont">
+                        <label>Student ID<input type="text" /></label>
+                        <label>Name<input type="text" /></label>
+                        <label>Surname<input type="text" /></label>
+                        <label>Grade<input type="text" /></label>
+                        <label>Year<input type="text" /></label>
+                        <label>Department ID<input type="text" /></label>
+                    </div>
+                    <input class="addbtn" type="button" value="submit">
+                </div>
+
+                <div class="add-sect" aaof="teacher">
+                    <div class="addcont">
+                        <label>Teacher ID<input type="text" /></label>
+                        <label>Name<input type="text" /></label>
+                        <label>Surname<input type="text" /></label>
+                        <label>Is Dean<input type="text" /></label>
+                        <label>Wage<input type="text" /></label>
+                        <label>Department ID<input type="text" /></label>
+                    </div>
+                    <input class="addbtn" type="button" value="submit">
+                </div>
+
+                <div class="add-sect" aaof="department">
+                    <div class="addcont">
+                        <label>Department ID<input type="text" /></label>
+                        <label>Building Name<input type="text" /></label>
+                        <label>Department Name<input type="text" /></label>
+                    </div>
+                    <input class="addbtn" type="button" value="submit">
+                </div>
+
+            </div>
+
+            <div class="tab" id="remove">
+                <select id="rem-select">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="department">Department</option>
+                </select>
+
+                <label id="remlab">ID<input id="reminp" type="text" /></label>
+                <input type="button" id="rembtn" value="Remove">
+            </div>
+
+            <div class="tab" id="cofs">
+                <label id="m_cof">Student ID<input type="text" id="cofin" placeholder="Type Id Here" /></label>
+                <table id="cof-view">
+                    <thead>
+                        <tr id="c_head"></tr>
+                    </thead>
+                    <tbody id="c_body"></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
