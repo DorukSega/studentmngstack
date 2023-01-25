@@ -21,4 +21,4 @@ Steps after dependencies are met:
 	this will start a local instance of the api
 4. inside WEB folder start the index.html
 	if working with a local api server, cors bypass is needed
-	if api is hosted, change const url = "http://127.0.0.1:8090" inside main.js to the host ip address
+	if api is hosted, change `const url = "http://127.0.0.1:8090"` inside main.js to the host ip address
